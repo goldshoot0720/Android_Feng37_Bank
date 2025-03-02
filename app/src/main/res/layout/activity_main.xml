@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="100dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:text="金融機構："
+            android:textSize="18sp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:layout_marginBottom="50dp"/>
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/textView1"
+            android:textSize="18sp"
+            android:background="@drawable/border"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:text="存款金額："
+            android:layout_below="@id/textView1"
+            android:layout_alignLeft="@id/textView1"
+            android:textSize="18sp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:layout_marginBottom="50dp"/>
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:inputType="number"
+            android:maxLength="10"
+            android:layout_below="@id/spinner1"
+            android:layout_alignRight="@id/spinner1"
+            android:layout_alignTop="@id/textView2"
+            android:textSize="18sp"
+            android:background="@drawable/border"
+            android:hint="請輸入數字"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:text="累積存款："
+            android:layout_below="@id/textView2"
+            android:layout_alignLeft="@id/textView2"
+            android:textSize="18sp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:layout_marginBottom="50dp"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/editText1"
+            android:layout_alignRight="@id/editText1"
+            android:layout_alignTop="@id/textView3"
+            android:textSize="18sp"
+            android:background="@drawable/border"
+            android:hint="尚未計算"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="修改"
+            android:textSize="18sp"
+            android:layout_below="@id/textView3"
+            android:layout_alignLeft="@id/textView3"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="存檔"
+            android:textSize="18sp"
+            android:layout_below="@id/textView4"
+            android:layout_alignRight="@id/textView4"
+            android:layout_alignTop="@id/button1"
+            android:gravity="center"/>
+
+        <View
+            android:id="@+id/centerSpace1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
