@@ -88,7 +88,7 @@
         <Button
             android:id="@+id/button1"
             android:layout_width="120dp"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:text="修改"
             android:textSize="18sp"
             android:layout_below="@id/textView3"
@@ -98,7 +98,7 @@
         <Button
             android:id="@+id/button2"
             android:layout_width="200dp"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:text="存檔"
             android:textSize="18sp"
             android:layout_below="@id/textView4"
@@ -109,8 +109,19 @@
         <View
             android:id="@+id/centerSpace1"
             android:layout_width="50dp"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="400dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/button1"
+            android:layout_alignLeft="@id/button1"
+            android:textSize="18sp"
+            android:background="@drawable/border"
+            android:hint="(000)中央銀行(鋒兄分行)存款金額：∞"
+            android:gravity="center"/>
 
     </RelativeLayout>
 

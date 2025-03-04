@@ -1,12 +1,15 @@
 <resources>
-    <string name="app_name">AndroidFeng37Bank</string>
+    <string name="app_name">Android_Feng37_Bank</string>
     <string-array name="banks_array">
-        <item>(013)國泰世華商業銀行</item>
-        <item>(017)兆豐國際商業銀行</item>
-        <item>(048)王道商業銀行</item>
-        <item>(103)臺灣新光商業銀行</item>
-        <item>(700)中華郵政股份有限公司</item>
-        <item>(812)台新國際商業銀行</item>
-        <item>(822)中國信託商業銀行</item>
+        <item>(006)合作金庫</item>
+        <item>(013)國泰世華</item>
+        <item>(017)兆豐銀行</item>
+        <item>(048)王道銀行</item>
+        <item>(103)新光銀行</item>
+        <item>(396)街口支付</item>
+        <item>(700)中華郵政</item>
+        <item>(808)玉山銀行</item>
+        <item>(812)台新銀行</item>
+        <item>(822)中國信託</item>
     </string-array>
 </resources>

@@ -23,11 +23,11 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    int[] bank_savings = new int[7];
+    int[] bank_savings = new int[10];
     int Calc_Sum_Saving()
     {
         int sum_saving = 0;
-        for (int i = 0; i < 7; i++)
+        for (int i = 0; i < 10; i++)
         {
             sum_saving += bank_savings[i];
         }
@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 SharedPreferences sharedPreferences = getSharedPreferences("bank_savings", MODE_PRIVATE);
                 SharedPreferences.Editor editor = sharedPreferences.edit();
-                for (int i = 0; i < 7; i++) {
+                for (int i = 0; i < 10; i++) {
                     editor.putInt(String.valueOf(i), bank_savings[i]);
                     editor.commit();
                     Log.d("寫檔： "+String.valueOf(i),String.valueOf(bank_savings[i]));
@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
 
         try {
             SharedPreferences sharedPreferences2 = getSharedPreferences("bank_savings", MODE_PRIVATE);
-            for (int i = 0; i < 7; i++) {
+            for (int i = 0; i < 10; i++) {
                 if(sharedPreferences2.contains(String.valueOf(i))) {
                     int num = 0;
                     bank_savings[i] = sharedPreferences2.getInt(String.valueOf(i), 0);
@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
         }
         catch (Exception e){
             Toast.makeText(MainActivity.this, "初始化", Toast.LENGTH_SHORT).show();
-            for (int i = 0; i < 7; i++) {
+            for (int i = 0; i < 10; i++) {
                 bank_savings[i] = 0;
             }
         }
