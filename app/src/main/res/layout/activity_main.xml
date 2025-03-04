@@ -10,14 +10,14 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="100dp"
+        android:paddingTop="50dp"
         android:paddingLeft="25dp"
         android:paddingRight="25dp">
 
         <TextView
             android:id="@+id/textView1"
             android:layout_width="120dp"
-            android:layout_height="100dp"
+            android:layout_height="50dp"
             android:layout_alignParentLeft="true"
             android:text="金融機構："
             android:textSize="18sp"
@@ -27,8 +27,8 @@
 
         <Spinner
             android:id="@+id/spinner1"
-            android:layout_width="200dp"
-            android:layout_height="100dp"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
             android:layout_alignParentRight="true"
             android:layout_alignTop="@id/textView1"
             android:textSize="18sp"
@@ -38,7 +38,7 @@
         <TextView
             android:id="@+id/textView2"
             android:layout_width="120dp"
-            android:layout_height="100dp"
+            android:layout_height="50dp"
             android:text="存款金額："
             android:layout_below="@id/textView1"
             android:layout_alignLeft="@id/textView1"
@@ -49,8 +49,8 @@
 
         <EditText
             android:id="@+id/editText1"
-            android:layout_width="200dp"
-            android:layout_height="100dp"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
             android:inputType="number"
             android:maxLength="10"
             android:layout_below="@id/spinner1"
@@ -64,7 +64,7 @@
         <TextView
             android:id="@+id/textView3"
             android:layout_width="120dp"
-            android:layout_height="100dp"
+            android:layout_height="50dp"
             android:text="累積存款："
             android:layout_below="@id/textView2"
             android:layout_alignLeft="@id/textView2"
@@ -75,53 +75,57 @@
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="200dp"
-            android:layout_height="100dp"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
             android:layout_below="@id/editText1"
             android:layout_alignRight="@id/editText1"
             android:layout_alignTop="@id/textView3"
             android:textSize="18sp"
             android:background="@drawable/border"
             android:hint="尚未計算"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:layout_marginBottom="50dp"/>
 
         <Button
             android:id="@+id/button1"
             android:layout_width="120dp"
-            android:layout_height="100dp"
+            android:layout_height="50dp"
             android:text="修改"
             android:textSize="18sp"
             android:layout_below="@id/textView3"
             android:layout_alignLeft="@id/textView3"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:layout_marginBottom="50dp"/>
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="200dp"
-            android:layout_height="100dp"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
             android:text="存檔"
             android:textSize="18sp"
             android:layout_below="@id/textView4"
             android:layout_alignRight="@id/textView4"
             android:layout_alignTop="@id/button1"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:layout_marginBottom="50dp"/>
 
         <View
             android:id="@+id/centerSpace1"
-            android:layout_width="50dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
             android:layout_centerHorizontal="true"/>
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="400dp"
-            android:layout_height="100dp"
+            android:layout_height="50dp"
             android:layout_below="@id/button1"
             android:layout_alignLeft="@id/button1"
             android:textSize="18sp"
             android:background="@drawable/border"
             android:hint="(000)中央銀行(鋒兄分行)存款金額：∞"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:layout_marginBottom="50dp"/>
 
     </RelativeLayout>
 
