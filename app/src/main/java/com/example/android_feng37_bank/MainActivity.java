@@ -95,11 +95,23 @@ public class MainActivity extends AppCompatActivity {
                     Log.d("寫檔： "+String.valueOf(i),String.valueOf(bank_savings[i]));
                 }
                 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-                builder.setTitle("AndroidFeng37Bank");
-                builder.setMessage("已存檔");
+                Toast.makeText(MainActivity.this, "已存檔", Toast.LENGTH_SHORT).show();
+                textView4.setText(String.valueOf(Calc_Sum_Saving()));
+            }
+        });
+
+        Button button3 = findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                builder.setTitle("Feng37_2025");
+                builder.setMessage("委任第五職等\n簡任第十二職等\n第12屆臺北市長\n第23任總統\n中央銀行鋒兄分行");
                 builder.create().show();
             }
         });
+
+
 
         try {
             SharedPreferences sharedPreferences2 = getSharedPreferences("bank_savings", MODE_PRIVATE);
